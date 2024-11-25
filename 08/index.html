@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-color:rgb(174, 9, 9);
+        }
+        hr{
+            text-decoration-color: black;
+        }
+        button{
+            background-color: rgb(252, 252, 35);
+        }
+    </style>
+    <script>
+         let linguagens = Array();
+
+         linguagens [0]='Dart';
+         linguagens [1]='PHP';
+         linguagens [2]='Java'; 
+         linguagens[3]='Pyton'; 
+         linguagens [4]='Perl'; 
+         linguagens [5]='Ruby on Rails'; 
+         linguagens [6]='C++'; 
+
+        function mostrarListaliguagens(){
+            const container = document.getElementById('minhaDiv'); 
+                for (var i=0; i < linguagens.length; i++){
+                    var tag = '<h5>' + i + '-'+linguagens [i] + '</h5>'; 
+                    container.innerHTML += tag; 
+                } 
+        }
+                function posicaolinguagens(){
+                    var indice = prompt('Qual posição da lista deseja consultar?');
+                    alert(linguagens [indice]); 
+        } 
+        </script>
+        <script>
+            let frutas = Array();
+
+         frutas [0]='Maçã';
+         frutas [1]='Banana';
+         frutas [2]='Manga'; 
+         frutas[3]='Pitaya'; 
+         frutas [4]='Pêra'; 
+         frutas [5]='Pitomba'; 
+         frutas [6]='Acerola'; 
+
+        function mostrarListafrutas(){
+            const container = document.getElementById('myDiv'); 
+                for (var i=0; i < frutas.length; i++){
+                    var tag = '<h5>' + i + '-'+frutas [i] + '</h5>'; 
+                    container.innerHTML += tag; 
+                } 
+        }
+                function posicaofrutas(){
+                    var indice = prompt('Qual posição da lista deseja consultar?');
+                    alert(frutas [indice]); 
+        } 
+        </script>
+</head>
+<body>
+    <h1>Arrays marxistas!</h1>
+    ____________________________________
+    <h1>Array de linguagens!</h1> 
+    <button onclick="mostrarListaliguagens()">Criar Array</button> <br><br> 
+    <button onclick="posicaolinguagens()">Posição no Array</button> 
+    <div id="minhaDiv"></div>
+</body>
+<br>
+    ___________________________________
+<body>
+    <h1>Array de frutas!</h1> 
+    <button onclick="mostrarListafrutas()">Criar Array</button> <br><br> 
+    <button onclick="posicaofrutas()">Posição no Array</button> 
+    <div id="myDiv"></div>
+</body>
+___________________________________
+<body><br><br>
+<img src="https://www.jornalopcao.com.br/assets/2022/08/bolsonaro-comunista.jpg" height="200px">
+</body>
