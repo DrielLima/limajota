@@ -55,7 +55,21 @@
                 function posicaofrutas(){
                     var indice = prompt('Qual posição da lista deseja consultar?');
                     alert(frutas [indice]); 
-        } 
+        }
+        function apagarLinguagens(){
+            const container = document.getElementById('minhaDiv');
+            container.innerHTML = "";
+        }
+
+            function posicaolinguagens(){
+                var indice = prompt('Qual posição da lista deseja consultar?');
+                alert(linguagens [indice]);
+            } 
+            function apagarfrutas(){
+                const container = document.getElementById('myDiv');
+                container.innerHTML = "";
+            }
+
         </script>
 </head>
 <body>
@@ -64,6 +78,7 @@
     <h1>Array de linguagens!</h1> 
     <button onclick="mostrarListaliguagens()">Criar Array</button> <br><br> 
     <button onclick="posicaolinguagens()">Posição no Array</button> 
+    <button onclick="apagarLinguagens()">Limpar</button> 
     <div id="minhaDiv"></div>
 </body>
 <br>
@@ -72,6 +87,7 @@
     <h1>Array de frutas!</h1> 
     <button onclick="mostrarListafrutas()">Criar Array</button> <br><br> 
     <button onclick="posicaofrutas()">Posição no Array</button> 
+    <button onclick="apagarfrutas()">Limpar</button> 
     <div id="myDiv"></div>
 </body>
 ___________________________________
