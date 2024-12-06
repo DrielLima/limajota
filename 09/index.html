@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color:rgb(194, 55, 55);
+        }
+        hr{
+            text-decoration-color: black;
+        }
+        button{
+            background-color: rgb(252, 252, 35);
+        }
+    </style>
+    <script>
+        let pilhaPessoas = [];
+
+        function addpessoa() {
+            const nome = document.getElementById('nome').value;
+            if (nome) {
+                pilhaPessoas.push(nome);
+                atlista();
+                document.getElementById('nome').value = '';
+            } else {
+                alert('DIGITA UM NOME, CAMARADA!!!!!');
+            }
+        }
+
+        function removerPessoa() {
+            if (pilhaPessoas.length > 0) {
+                const pessoaRemovida = pilhaPessoas.pop();
+                atlista();
+            } else {
+                alert('A pilha está vazia!');
+            }
+        }
+        function atlista() {
+            const lista = document.getElementById('lipilha');
+            lista.innerHTML = '';
+            pilhaPessoas.forEach((pessoa) => {
+                const li = document.createElement('li');
+                li.textContent = pessoa;
+                lista.appendChild(li);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Louro Fidel ☭</h1>___________________________________<br><br>
+    <input type="text" id="nome" placeholder="Digite um nome(please ;):">
+    <button onclick="addpessoa()">Add. Pessoa 👶</button>
+    <button onclick="removerPessoa()">Remover pessoa 💀</button>
+    <h2>Nomes:</h2>
+    <ul id="lipilha"></ul>
+</body>
+__________________________________
+<body><br><br>
+<img src="https://down-br.img.susercontent.com/file/ce31a32557b7e941ec6a9c37f6a5fdd2" height="250px">
+</body>
+</html>
